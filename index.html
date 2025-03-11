@@ -310,5 +310,67 @@
         </div>
     </div>
 </footer>
+<!--END footer-->
+
+<!-- backdrop-modal-windovs-->
+<div class="backdrop" data-modal is-open>
+    <div class="modal">
+        <button class="close-btn" type="button" data-modal-close>
+        <svg class="close-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+        </button>
+       <p class="modal-text">Leave your contacts and we will call you back</p>
+
+       <form class="modal-form">
+         <div class="modal-container-blok">
+            <label for="modal-form-label" for="person-text">Name </label>
+            <div class="modal-form-input-peron">
+                <input class="modal-form-input" required id="person-text" name="person-text"
+                 type="text">
+                <svg class="modal-form-icon" width="24" height="24">
+                    <Use href="./images/icons.svg#icon-person"> </Use>
+                </svg>
+            </div>
+
+            <label for="modal-form-label" for="Phone-text">Phone </label>
+            <div class="modal-form-input-Phone">
+                <input class="modal-form-input" required id="Phone-text" name="Phone-text" type="text">
+                <svg class="modal-form-icon" width="24" height="24">
+                    <Use href="./images/icons.svg#icon-phone"> </Use>
+                </svg>
+            </div>
+
+            <label for="modal-form-label" for="Email-text">Email </label>
+            <div class="modal-form-input-Email">
+                <input class="modal-form-input" required id="Email-text" name="Email-text" type="text">
+                <svg class="modal-form-icon" width="24" height="24">
+                    <Use href="./images/icons.svg#icon-email"> </Use>
+                </svg>
+            </div>
+
+            <label for="modal-form-label" for="Email-text">Comment </label>
+            <div class="modal-form-input-Comment">
+                <input class="modal-form-input" required id="Comment-text" name="Comment-text" type="text">
+            </div>
+         </div>
+
+          <div class="modal-form-checkbox"> 
+            <svg class="modal-form-icon" width="24" height="24">
+                <Use href="./images/icons.svg#"> </Use>
+            </svg>
+            <P class="modal-form-checkbox-text"> I accept the terms and conditions of the  <span class="privacy-policy">Privacy Policy </span></P>
+          </div>
+
+          <div class="modal-form-button"  type="button">
+           <p class="modal-form-button-sent"> Sent</p> 
+          </div>
+
+
+        </form>
+    </div>
+</div>
+<!--ENDbackdrop-modal-windovs-->
+
 </body>
 </html>

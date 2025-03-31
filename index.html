@@ -331,7 +331,7 @@
  <!--END footer-->
 
  <!-- backdrop-modal-windovs-->
-<div class="backdrop" data-modal>
+<div class="backdrop is-open" data-modal>
     <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
             <svg class="close-btn-icon" width="8" height="8">
@@ -350,6 +350,7 @@
                     </svg>
                 </div>
             </div>
+
             <div class="modal-container-blok">
                 <label class="modal-form-label" for="phone">Phone</label>
                 <div class="modal-input-container">
@@ -359,6 +360,7 @@
                     </svg>
                 </div>
             </div>
+
             <div class="modal-container-blok">
                 <label class="modal-form-label">Email</label>
                 <div class="modal-input-container">
@@ -368,9 +370,10 @@
                     </svg>
                 </div>
             </div>
+
             <div class="modal-container-blok">
-                <label class="comment-text">Comment</label>
-                <textarea></textarea>
+                <label class="modal-form-label" for="user-comment">Comment</label>
+                <textarea id="user-comment" name="user-comment" placeholder="Text input" class="modal-textarea-form"></textarea>
             </div>
 
             <div class="modal-form-checkbox">

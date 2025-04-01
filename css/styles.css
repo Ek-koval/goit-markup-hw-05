@@ -767,22 +767,24 @@ background-color: #404bbf;}
     border-color: #4D5AE5;
 }
 
-
+.user-checkbox {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
 :root {
     --checkbox-bg-color: #404bbf;
     --icon-checked-color: #F4F4FD;
+    --link-color: #4d5ae5;
 }
 
-.modal-form-checkbox {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
+/* Ховаємо чекбокс */
 .checkbox {
     display: none;
 }
 
+/* Стилі для кастомного чекбокса */
 .custom-checkbox {
     width: 16px;
     height: 16px;
@@ -791,20 +793,38 @@ background-color: #404bbf;}
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    fill: transparent;
+    background-color: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Зміна стилю при checked */
+/* Початковий стан іконки */
+.custom-checkbox svg {
+    fill: transparent;
+}
+
 .modal-form-checkbox input:checked+label .custom-checkbox {
     background-color: var(--checkbox-bg-color);
     border: none;
 }
 
+/* Зміна кольору іконки при checked */
 .modal-form-checkbox input:checked+label .custom-checkbox svg {
     fill: var(--icon-checked-color);
+}
+
+/* Стилі для посилання */
+.privacy-policy-link {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Ефект при наведенні на посилання */
+.privacy-policy-link:hover,
+.privacy-policy-link:focus {
+    color: darken(var(--link-color), 10%);
 }
 
 .modal-form-button {

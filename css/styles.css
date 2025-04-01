@@ -797,7 +797,7 @@ background-color: #404bbf;}
 }
 
 /* Зміна стилю при checked */
-.checkbox:checked + .user-checkbox .custom-checkbox {
+.checkbox:checked+.user-checkbox .custom-checkbox {
     border: none;
     background-color: var(--checkbox-bg-color);
     fill: var(--icon-checked-color);
@@ -827,5 +827,5 @@ background-color: #404bbf;}
 }
 
 .modal-container-blok-comment {
-margin-bottom: 16px;
+    margin-bottom: 16px;
 }

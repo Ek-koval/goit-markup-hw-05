@@ -884,6 +884,6 @@ background-color: #404bbf;}
 }
 
 /* Зміна кольору іконки при checked */
-.modal-form-checkbox input:checked+label .custom-checkbox svg .custom-checkbox-svg {
+.modal-form-checkbox input:checked+label .custom-checkbox svg {
     fill: var(--icon-checked-color);
 }

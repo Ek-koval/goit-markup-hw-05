@@ -792,8 +792,14 @@ background-color: #404bbf;}
     fill: transparent;
 }
 
-.privacy-policy{
+.privacy-policy-link {
     color: #4d5ae5;
+}
+
+.modal-form-checkbox input:checked+.user-checkbox .custom-checkbox {
+    background-color: var(--checkbox-bg);
+    border: none;
+    fill: var(--icon-fill);
 }
 
 .modal-form-button {
@@ -818,3 +824,4 @@ background-color: #404bbf;}
 .modal-form-button:hover {
     background: #5750e0;
 }
+

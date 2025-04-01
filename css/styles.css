@@ -782,42 +782,6 @@ background-color: #404bbf;}
     color: #8e8f99;
 }
 
-/* Ховаємо стандартний чекбокс */
-.checkbox {
-    display: none;
-}
-
-/* Кастомний чекбокс */
-.custom-checkbox {
-    width: 16px;
-    height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* Початковий стан іконки */
-.custom-checkbox svg {
-    fill: transparent;
-}
-
-/* Зміна стилю при checked */
-.checkbox:checked+.user-checkbox .custom-checkbox {
-    background-color: var(--checkbox-bg-color);
-    border: none;
-}
-
-/* Зміна кольору іконки при checked */
-.checkbox:checked+.user-checkbox .custom-checkbox svg {
-    fill: var(--icon-checked-color);
-}
-
 /* Стилі для посилання */
 .privacy-policy-link {
     color: var(--link-color);
@@ -858,4 +822,53 @@ background-color: #404bbf;}
 /* Контейнер для коментаря */
 .modal-container-blok-comment {
     margin-bottom: 16px;
+}
+
+
+:root {
+    --checkbox-bg-color: #404bbf;
+    --icon-checked-color: #F4F4FD;
+}
+
+/* Ховаємо стандартний чекбокс */
+.checkbox {
+    display: none;
+}
+
+/* Кастомний чекбокс */
+.custom-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Початковий стан іконки */
+.custom-checkbox span {
+    fill: transparent;
+    /* Span сам по собі не підтримує fill, але цей стиль не завадить */
+}
+
+.custom-checkbox svg {
+    fill: transparent;
+}
+
+/* Стиль при checked */
+.checkbox:checked+.user-checkbox .custom-checkbox {
+    background-color: var(--checkbox-bg-color);
+    border: none;
+    fill: var(--icon-checked-color);
+    /* Для підтримки */
+}
+
+/* Зміна кольору іконки при checked */
+.checkbox:checked+.user-checkbox .custom-checkbox svg {
+    fill: var(--icon-checked-color);
 }

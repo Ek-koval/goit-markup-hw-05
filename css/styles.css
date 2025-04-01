@@ -773,10 +773,10 @@ background-color: #404bbf;}
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
+
 :root {
     --checkbox-bg-color: #404bbf;
     --icon-checked-color: #F4F4FD;
-    --link-color: #4d5ae5;
 }
 
 /* Ховаємо чекбокс */
@@ -852,4 +852,20 @@ background-color: #404bbf;}
 
 .modal-container-blok-comment {
     margin-bottom: 16px;
+}
+
+/* Початковий стан іконки */
+.custom-checkbox svg {
+    fill: transparent;
+}
+
+/* Зміна стилю при checked */
+.modal-form-checkbox input:checked+label .custom-checkbox {
+    background-color: var(--checkbox-bg-color);
+    border: none;
+}
+
+/* Зміна кольору іконки при checked */
+.modal-form-checkbox input:checked+label .custom-checkbox svg {
+    fill: var(--icon-checked-color);
 }

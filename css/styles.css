@@ -688,7 +688,6 @@ background-color: #404bbf;}
 
 .modal-container-blok {
     margin-bottom: 8px;
-    margin-bottom: 16px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -830,3 +829,14 @@ background-color: #404bbf;}
     background: #5750e0;
 }
 
+.checkbox:checked {
+    background-color: #404bbf
+}
+
+.checkbox:checked+span {
+    fill: #F4F4FD
+}
+
+.modal-container-blok {
+    margin-bottom: 16px
+}

@@ -797,12 +797,9 @@ background-color: #404bbf;}
 }
 
 /* Зміна стилю при checked */
-.modal-form-checkbox input:checked+.user-checkbox .custom-checkbox {
-    background-color: var(--checkbox-bg-color);
+.checkbox:checked + .user-checkbox .custom-checkbox {
     border: none;
-}
-
-.modal-form-checkbox input:checked+.user-checkbox .custom-checkbox svg {
+    background-color: var(--checkbox-bg-color);
     fill: var(--icon-checked-color);
 }
 
@@ -829,14 +826,6 @@ background-color: #404bbf;}
     background: #5750e0;
 }
 
-.checkbox:checked {
-    background-color: #404bbf
-}
-
-.checkbox:checked+span {
-    fill: #F4F4FD
-}
-
-.modal-container-blok {
-    margin-bottom: 16px
+.modal-container-blok-comment {
+margin-bottom: 16px;
 }

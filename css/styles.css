@@ -687,6 +687,7 @@ background-color: #404bbf;}
 }
 
 .modal-container-blok {
+    margin-bottom: 8px;
     margin-bottom: 16px;
     display: flex;
     flex-direction: column;
@@ -796,10 +797,14 @@ background-color: #404bbf;}
     color: #4d5ae5;
 }
 
+/* Зміна стилю при checked */
 .modal-form-checkbox input:checked+.user-checkbox .custom-checkbox {
-    background-color: var(--checkbox-bg);
+    background-color: var(--checkbox-bg-color);
     border: none;
-    fill: var(--icon-fill);
+}
+
+.modal-form-checkbox input:checked+.user-checkbox .custom-checkbox svg {
+    fill: var(--icon-checked-color);
 }
 
 .modal-form-button {

@@ -768,16 +768,19 @@ background-color: #404bbf;}
 }
 
 
-.user-checkbox {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
+:root {
+    --checkbox-bg-color: #404bbf;
+    --icon-checked-color: #F4F4FD;
 }
 
-.modal-form-checkbox input {
-    width: 16px;
-    height: 16px;
+.modal-form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox {
+    display: none;
 }
 
 .custom-checkbox {
@@ -785,21 +788,22 @@ background-color: #404bbf;}
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
-}
-
-.privacy-policy-link {
-    color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Зміна стилю при checked */
-.checkbox:checked+.user-checkbox .custom-checkbox {
-    border: none;
+.modal-form-checkbox input:checked+label .custom-checkbox {
     background-color: var(--checkbox-bg-color);
+    border: none;
+}
+
+.modal-form-checkbox input:checked+label .custom-checkbox svg {
     fill: var(--icon-checked-color);
 }
 
